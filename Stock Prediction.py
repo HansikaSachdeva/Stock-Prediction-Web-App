@@ -17,7 +17,7 @@ today = date.today().strftime("%Y-%m-%d")
 st.title('Stock Forecast App')
 
 #reading csv file with ticker symbols into a data frame
-df = pd.read_csv(r'C:\Users\hansi\Desktop\Projects\stock_prediction_app\Yahoo-Finance-Ticker-Symbols.csv')
+df = pd.read_csv(r'path\to\csv')
 stocks = df
 selected_stock = st.selectbox("Select stock for prediction", stocks)
 
